@@ -4,7 +4,8 @@ metadata:
   name: nginx-app
   labels:
     name: nginx-app
+    tier: front-end
 spec: 
   containers:
-  - name: nginx-app
+  - name: nginx-container
     image: nginx
