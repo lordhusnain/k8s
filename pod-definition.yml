@@ -8,4 +8,10 @@ metadata:
 spec: 
   containers:
   - name: nginx-container
-    image: nginx
+    image: nginx  
+    env:
+      - name: APP_COLOR
+        value: blue
+    envFrom:
+      - configMapRef:
+          name: my-configmap
